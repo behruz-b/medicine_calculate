@@ -2,14 +2,6 @@
   margin-top: 50px;
 }
 
-@media (min-width: 768px) {
-  .container-fluid {
-    margin-top: 50px;
-    padding-right: 80px;
-    padding-left: 80px;
-  }
-}
-
 .box {
   border-radius: 30px;
   border: 3px solid rgba(143, 174, 127, 0.96);
@@ -22,16 +14,6 @@
   padding: 20px 2px;
   margin-right: 1px;
   margin-left: 1px;
-}
-
-@media (min-width: 768px) {
-  .box-row {
-    border-radius: 30px;
-    border: 3px solid rgba(143, 174, 127, 0.96);
-    padding: 20px 2px;
-    margin-right: 5px;
-    margin-left: 45px;
-  }
 }
 
 .box-content {
@@ -52,13 +34,6 @@
 
 .h-250 {
   height: auto;
-}
-
-@media (min-width: 768px) {
-  .h-250 {
-    height: 250px;
-  }
-
 }
 
 .p-6 {
@@ -118,10 +93,34 @@ p {
   width: 200px;
   border-radius: 10px;
 }
+
 .print-button {
 }
 
 @media (min-width: 768px) {
+  .container-fluid {
+    margin-top: 50px;
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+
+  .box-row {
+    border-radius: 30px;
+    border: 3px solid rgba(143, 174, 127, 0.96);
+    padding: 20px 2px;
+    margin-right: 5px;
+    margin-left: 45px;
+  }
+
+  .result-box {
+    border-radius: 15px;
+    margin-left: 1.5rem;
+  }
+
+  .h-250 {
+    height: 250px;
+  }
+
   .print-button {
     margin-left: 3rem;
   }

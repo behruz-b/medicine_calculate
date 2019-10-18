@@ -2,14 +2,6 @@
   margin-top: 50px;
 }
 
-@media (min-width: 576px) {
-  .container-fluid {
-    margin-top: 50px;
-    padding-right: 80px;
-    padding-left: 80px;
-  }
-}
-
 @media (min-width: 768px) {
   .container-fluid {
     margin-top: 50px;
@@ -30,17 +22,6 @@
   padding: 20px 2px;
   margin-right: 1px;
   margin-left: 1px;
-}
-
-
-@media (min-width: 576px) {
-  .box-row {
-    border-radius: 30px;
-    border: 3px solid rgba(143, 174, 127, 0.96);
-    padding: 20px 2px;
-    margin-right: 5px;
-    margin-left: 45px;
-  }
 }
 
 @media (min-width: 768px) {
@@ -73,17 +54,11 @@
   height: auto;
 }
 
-@media (min-width: 576px) {
-  .h-250 {
-    height: 250px;
-  }
-
-}
-
 @media (min-width: 768px) {
   .h-250 {
     height: 250px;
   }
+
 }
 
 .p-6 {
@@ -138,25 +113,16 @@ p {
   text-align: center;
 }
 
-.print-button {
+.btn-green {
   font-size: 28px;
   width: 200px;
   border-radius: 10px;
 }
+.print-button {
+}
 
 @media (min-width: 768px) {
   .print-button {
-    font-size: 28px;
-    width: 200px;
-    border-radius: 10px;
-    margin-left: 3rem;
-  }
-}
-@media (min-width: 576px) {
-  .print-button {
-    font-size: 28px;
-    width: 200px;
-    border-radius: 10px;
     margin-left: 3rem;
   }
 }

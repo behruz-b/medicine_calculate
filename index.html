@@ -1,123 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="query.js"></script>
 </head>
 <body>
-    <div class="container">
-        <h2 class="text-center">
-            Калькулятор оценки риска венозных тромбоэмболических осложнений (ВТО)
-        </h2>
-        <p class="text-left">
-            Пожалуйста, отметьте присутствующие факторы риска
-        </p>
-        <p class="text-left">
-            Факторы, связанные с пациентом:
-        </p>
-        <div class="row">
-            <div class="col-md-4">
-                <form class="form1">
-                        <p><strong>Вазраст</strong></p>
-                    <div class="content1">
-                        <input type="radio" name="radio1" value="1"/> 20-40 лет<br>
-                        <input type="radio" name="radio1" value="1"/> 41-60 лет<br>
-                        <input type="radio" name="radio1" value="2"/> 61-74 лет<br>
-                    </div>
-                    <p><strong>Факторы риска:</strong></p>
-                    <div class="content2">
-                        <input type="checkbox" name="checkbox1" value="1"/> Отечность нor (в данный моме -<br>
-                        <input type="checkbox" name="checkbox1" value="2"/> Варикоз вен.<br>
-                        <input type="checkbox" name="checkbox1" value="3"/> Ожирение (индекс массы тела<br>
-                        <input type="checkbox" name="checkbox1" value="4"/> Сепсис (<1 мес)<br>
-                        <input type="checkbox" name="checkbox1" value="5"/> Серьезное заболевание легки.<br>
-                        <input type="checkbox" name="checkbox1" value="5"/>  Прием оральных контрацепти<br>
-                        <input type="checkbox" name="checkbox1" value="5"/>  Беременность или послеродон<br>
-                        <input type="checkbox" name="checkbox1" value="5"/> в анамнезе: рождение мертво<br>
-                        <input type="checkbox" name="checkbox1" value="5"/> Острый инфаркт миокарда<br>
-                        <input type="checkbox" name="checkbox1" value="5"/> Застойная сердечная недостат<br>
-                        <input type="checkbox" name="checkbox1" value="5"/> Пациент находится на постель<br>
-                        <input type="checkbox" name="checkbox1" value="5"/> Воспалительное заболевание.<br>
-                    </div>
-                    <p><strong>Факторы риска, связанные с травмой или с оперативным вмешательством</strong></p>
-                    <div class="content33">
-                        <input type="checkbox" name="checkbox1" value="1"/> Центральный венозный досту,<br>
-                        <input type="checkbox" name="checkbox1" value="2"/> Планируется малое хирургиче<br>
-                        <input type="checkbox" name="checkbox1" value="3"/> Артроскопическая операция<br>
-                        <input type="checkbox" name="checkbox1" value="4"/> Лапароскопическая операция<br>
-                        <input type="checkbox" name="checkbox1" value="5"/> Большая хирургия (>45 мин)<br>
-                        <input type="checkbox" name="checkbox1" value="5"/> Большая хирургия (>45 мин)<br>
-                        <input type="checkbox" name="checkbox1" value="5"/> Множественные травмы (1 м<br>
-                        <input type="checkbox" name="checkbox1" value="5"/> Артропластика нижних конечн<br>
-                        <input type="checkbox" name="checkbox1" value="5"/> Перелом таа/ бедра / голени<br>
-                    </div>
-                    <div class="submit">
-                        <button class="btn btn-outline-primary" type="reset" style="border-radius: 20px">Reset</button>
-                        <button class="btn btn-outline-primary" type="submit" style="border-radius: 20px">Submit</button>
-                    </div>
-                    <br>
-                    <br>
-                </form>
-            </div>
-
-            <div class="col-md-8 col-12 ">
-                <div class="text-center ml-5">
-                    <div class="row">
-                        <div class="col-md-2 col-2">
-                            <div class="img" style="padding: 50%; border-radius: 50%; background-color: #34ce57"></div>
-                        </div>
-                        <div class="col-md-8 col-6">
-                            
-                        </div>
-                        <div class="col-md-2 col-2">
-                            <div class="img" style="padding: 50%; border-radius: 50%; background-color: green"></div>
-                        </div>
-                    <div class="row">
-                            <div class="offset-2 offset-md-4 col-md-8 col-6">
-                                <div class="clock">
-                                    <img src="images/1.png" class="img-fluid img-fluid">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-2 col-2">
-                            <div class="img" style="padding: 50%; border-radius: 50%; background-color: orange"></div>
-                        </div>
-                        <div class="col-md-8 col-6">
-
-                        </div>
-                        <div class="col-md-2 col-2">
-                            <div class="img" style="padding: 50%; border-radius: 50%; background-color: red"></div>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <table class="text-center ml-5" border="1px black">
-                    <tbody>
-                    <tr>
-                        <td width="150">Риск Втэо = </td>
-                        <td width="150">Риск Втэо <br> связанный <br>с пациентом</td>
-                        <td width="75"> + </td>
-                        <td width="150">Риск Втэо <br> связанный <br>с операцией</td>
-                    </tr>
-                    </tbody>
-                </table>
-                    <textarea class="textarea" style="padding: 10px">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam laborum ipsa suscipit exercitationem obcaecati voluptate, iste odio non repellendus cum! Ab unde voluptatibus hic, dolorum exercitationem sapiente laborum modi ipsam.
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident magni nulla soluta voluptatem recusandae, distinctio, repudiandae temporibus repellendus ea autem quaerat. Distinctio blanditiis qui ipsum, expedita itaque eius beatae ipsam.
-                    </textarea>
-                <br>
-                    <div class="print">
-                        <button class="btn btn-outline-primary" style="border-radius: 20px">PRINT</button>
-                    </div>
-                <br>
-            </div>
+<div class="container-fluid">
+  <h2 class="text-center">
+    Калькулятор оценки риска венозных тромбоэмболических осложнений (ВТО)
+  </h2>
+  <p class="text-left">
+    Пожалуйста, отметьте присутствующие факторы риска
+  </p>
+  <p class="text-left">
+    Факторы риска, связанные с пациентом:
+  </p>
+  <div class="row">
+    <div class="col-md-4">
+      <form class="form1">
+        <p><strong>Возраст:</strong></p>
+        <div class="box">
+          <div class="box-content">
+            <input type="radio" name="age" value="1"/>41-60 лет<br>
+            <input type="radio" name="age" value="2"/>61-74 лет<br>
+            <input type="radio" name="age" value="3"/>75 лет и более<br>
+          </div>
         </div>
+        <p><strong>Факторы риска:</strong></p>
+        <div class="box">
+          <div class="box-content scroll-div h-400">
+            <input type="checkbox" name="checkbox1" value="1"/> Отечность ног (в данный момент)<br>
+            <input type="checkbox" name="checkbox1" value="1"/> Варикоз вен<br>
+            <input type="checkbox" name="checkbox1" value="1"/> Ожирение (индекс массы тела >25 кг/м2)<br>
+            <input type="checkbox" name="checkbox1" value="1"/> Сепсис (<1 мес)<br>
+            <input type="checkbox" name="checkbox1" value="1"/> Серьезное заболевание легких, включая пневмонию (<1
+            мес)<br>
+            <input type="checkbox" name="checkbox1" value="1"/> Прием оральных контрацептивов или гормональная
+            заместительная терапия<br>
+            <input type="checkbox" name="checkbox1" value="1"/> Беременность или послеродовый период (<1 мес)<br>
+            <input type="checkbox" name="checkbox1" value="1"/> В анамнезе: рождение мертвого ребенка по необъяснимым
+            причинам, повторный самопроизвольный аборт (3 и более раз), рождение ребенка с токсинемией, ребенок с
+            задержкой роста<br>
+            <input type="checkbox" name="checkbox1" value="1"/> Острый инфаркт миокарда<br>
+            <input type="checkbox" name="checkbox1" value="1"/> Застойная сердечная недостаточность (<1 мес)<br>
+            <input type="checkbox" name="checkbox1" value="1"/> Пациент находится на постельном режиме<br>
+            <input type="checkbox" name="checkbox1" value="1"/> Воспалительное заболевание кишечника в анамнезе<br>
+            <input type="checkbox" name="checkbox1" value="1"/> Большая хирургия в анамнезе (<1 мес)<br>
+            <input type="checkbox" name="checkbox1" value="1"/> Нарушение функции легких (ХОБЛ)<br>
+            <input type="checkbox" name="checkbox1" value="1"/> Какой-либо дополнительный фактор риска<br>
+            <input type="checkbox" name="checkbox1" value="2"/> Злокачественное новообразование (в настоящее время или
+            ранее)<br>
+            <input type="checkbox" name="checkbox1" value="2"/> Пациент прикован к постели (>72 ч)<br>
+            <input type="checkbox" name="checkbox1" value="2"/> Иммобилизирующая гипсовая повязка (<1 мес)<br>
+            <input type="checkbox" name="checkbox1" value="3"/> ТГВ/ТЭЛА в анамнезе<br>
+            <input type="checkbox" name="checkbox1" value="3"/> Мутация фактора V (Лейден)<br>
+            <input type="checkbox" name="checkbox1" value="3"/> Мутация протромбина 20210A<br>
+            <input type="checkbox" name="checkbox1" value="3"/> Положительный тест на волчаночный антикоагулянт<br>
+            <input type="checkbox" name="checkbox1" value="3"/> Наследственная склонность к тромбозам (наиболее часто
+            упускаемый из виду фактор!)<br>
+            <input type="checkbox" name="checkbox1" value="3"/> Повышенный уровень гомоцистеина в сыворотке<br>
+            <input type="checkbox" name="checkbox1" value="3"/> Гепарин-индуцированная тромбоцитопения (не используйте
+            гепарин и любые низкомолекулярные гепарины!)<br>
+            <input type="checkbox" name="checkbox1" value="3"/> Повышенный уровень антител к кардиолипину<br>
+            <input type="checkbox" name="checkbox1" value="3"/> Другая наследственная или приобретенная тромбофилия<br>
+            <input type="checkbox" name="checkbox1" value="5"/> Инсульт (<1 мес)<br>
+            <input type="checkbox" name="checkbox1" value="5"/> Острое поражение спинного мозга (паралич) (<1 мес)<br>
+          </div>
+        </div>
+        <br>
+        <br>
+      </form>
     </div>
+    <div class="col-md-3">
+      <form class="form1">
+        <p><strong>Факторы риска, связанные с травмой или с оперативным вмешательством</strong></p>
+        <div class="box">
+          <div class="box-content">
+            <input type="checkbox" name="checkbox1" value="2"/> Центральный венозный доступ<br>
+            <input type="checkbox" name="checkbox1" value="1"/> Планируется малое хирургическое вмешательство<br>
+            <input type="checkbox" name="checkbox1" value="2"/> Артроскопическая операция<br>
+            <input type="checkbox" name="checkbox1" value="2"/> Лапароскопическая операция (>45 мин)<br>
+            <input type="checkbox" name="checkbox1" value="2"/> Большая хирургия (>45 мин)<br>
+            <input type="checkbox" name="checkbox1" value="5"/> Множественные травмы (<1 мес)<br>
+            <input type="checkbox" name="checkbox1" value="5"/> Артропластика нижних конечностей<br>
+            <input type="checkbox" name="checkbox1" value="5"/> Перелом таза / бедра / голени (<1 мес)<br>
+          </div>
+        </div>
+        <div class="text-center mt-3">
+          <button class="btn btn-lg btn-success print-button" type="reset">
+            <b>СБРОС</b>
+          </button>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-5 col-12">
+      <div class="row box-row p-6">
+        <div class="col-md-3 text-center pt-3">Риск Втэо =</div>
+        <div class="col-md-4 text-center">Риск Втэо связанный с пациентом</div>
+        <div class="col-md-1 pt-3 text-center"> +</div>
+        <div class="col-md-4 text-center">Риск Втэо связанный с операцией</div>
+      </div>
+      <div class="row p-4">
+        <div class="col-md-6 offset-md-3">
+          <div class="bg-danger text-center p-2 ml-4 w-100 result-box">
+            <h1 class="text-white ml-2">Высокий</h1>
+          </div>
+        </div>
+      </div>
+      <div class="row box-row">
+        <div class="col-md-12 box-content scroll-div h-250 text-justify">
+          <b>Факторы, связанные с повышенной кровоточивостью:</b><br>
+          При наличии активных кровотечений, ГИТ в анамнезе, на фоне приема оральных антикоагулянтов, приема ингибиторов
+          гликопротеина IIb/IIIa пациент не может являться кандидатом на проведение антикоагулянтной терапии.
+          Должен рассматриваться вопрос об использовании прерывистой пневматической компрессии.
+          <br><br>
+          <b>Клиническое решение о применении прерывистой пневматической компрессии (ППК):</b><br>
+          Пациент с тяжелыми заболеваниями периферических артерий, СЗН, острым тромбозом поверхностных вен
+          не может являться кандидатом на ППК.
+          Должен рассматриваться вопрос о проведении альтернативных профилактических мероприятий.
+        </div>
+      </div>
+      <br>
+      <div class="col-md-6 text-center offset-md-3">
+        <button class="btn btn-lg btn-success print-button ml-5" >
+          <b>Распечатать</b>
+        </button>
+      </div>
+      <br>
+    </div>
+  </div>
+</div>
 </body>
 </html>

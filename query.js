@@ -86,5 +86,8 @@ function calculation() {
     document.getElementById("result-text").innerText = "Очень высокий";
     document.getElementById("conclude").innerHTML = "Низкомолекулярный гепарин (>3400 МЕ/сут), фондапаринукс, варфарин (МНО 2–3, только в ортопедии) или прерывистая пневматическая компрессия <br> Чулки с распределением давления + нефракционированный гепарин <br> Низкомолекулярный гепарин.";
   }
-
+}
+function resetFrom() {
+  document.getElementById("form1").reset();
+  document.getElementById("form").reset();
 }

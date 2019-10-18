@@ -36,6 +36,7 @@ function calculation() {
     document.getElementById("result-box").classList.add("bg-green");
     document.getElementById("result-box").classList.add("text-white");
     document.getElementById("result-text").innerText = "Низкий";
+    document.getElementById("conclude").innerHTML = "Специфических мероприятий не требуется; ранняя активизация больного.";
   } else if (ageBall + riskBall1 + riskBall2 === 2) {
     classList.forEach(function (classname) {
       if (classname === "bg-green") {
@@ -51,6 +52,7 @@ function calculation() {
     document.getElementById("result-box").classList.add("bg-light-green");
     document.getElementById("result-box").classList.add("text-white");
     document.getElementById("result-text").innerText = "Умеренный";
+    document.getElementById("conclude").innerHTML = "Низкие дозы нефракционированного гепарина (каждые 12 ч), низкомолеулярный гепарин (≤3400 МЕ/сут); <br>Чулки с распределением давления или прерывистая пневматическая компрессия.";
   } else if (ageBall + riskBall1 + riskBall2 === 3 || ageBall + riskBall1 + riskBall2 === 4) {
     classList.forEach(function (classname) {
       if (classname === "bg-green") {
@@ -66,6 +68,7 @@ function calculation() {
     document.getElementById("result-box").classList.add("bg-orange");
     document.getElementById("result-box").classList.add("text-white");
     document.getElementById("result-text").innerText = "Высокий";
+    document.getElementById("conclude").innerHTML = "Нефракционированный гепарин (каждые 8 ч) или низкомолекулярный гепарин (>3400 МЕ/сут) или перемежающаяся пневматическая компрессия.";
   } else if (ageBall + riskBall1 + riskBall2 >= 5) {
     classList.forEach(function (classname) {
       if (classname === "bg-green") {
@@ -81,6 +84,7 @@ function calculation() {
     document.getElementById("result-box").classList.add("bg-danger");
     document.getElementById("result-box").classList.add("text-white");
     document.getElementById("result-text").innerText = "Очень высокий";
+    document.getElementById("conclude").innerHTML = "Низкомолекулярный гепарин (>3400 МЕ/сут), фондапаринукс, варфарин (МНО 2–3, только в ортопедии) или прерывистая пневматическая компрессия <br> Чулки с распределением давления + нефракционированный гепарин <br> Низкомолекулярный гепарин.";
   }
 
 }

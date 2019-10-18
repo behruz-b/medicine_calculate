@@ -68,8 +68,20 @@
   color-stop(.6, #54DE5D))
 }
 
+.bg-green {
+  background-color: rgba(130, 249, 54, 0.96);
+}
+
+.bg-light-green {
+  background-color: lightgreen;
+}
+
+.bg-orange {
+  background-color: orange;
+}
+
 .bg-danger {
-  background-color: rgba(249,2,1,1);
+  background-color: red;
 }
 
 p {

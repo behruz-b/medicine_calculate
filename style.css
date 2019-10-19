@@ -9,9 +9,9 @@
 }
 
 .box-row {
-  border-radius: 30px;
+  border-radius: 10px;
   border: 3px solid rgba(143, 174, 127, 0.96);
-  padding: 20px 2px;
+  padding: 2px 2px;
   margin-right: 1px;
   margin-left: 1px;
 }
@@ -21,7 +21,7 @@
 }
 
 .result-box {
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .scroll-div {
@@ -29,12 +29,16 @@
   white-space: nowrap;
 }
 
+.scroll {
+  overflow-y: scroll;
+}
+
 
 .h-350 {
   height: 350px;
 }
 
-.h-250 {
+.h-200 {
   height: auto;
 }
 
@@ -105,21 +109,25 @@ p {
     padding-left: 80px;
   }
 
+  .h-40 {
+    height: 120px;
+  }
+
   .box-row {
-    border-radius: 30px;
+    border-radius: 10px;
     border: 3px solid rgba(143, 174, 127, 0.96);
-    padding: 20px 2px;
+    padding: 2px 2px;
     margin-right: 5px;
     margin-left: 45px;
   }
 
   .result-box {
-    border-radius: 15px;
+    border-radius: 10px;
     margin-left: 1.5rem;
   }
 
-  .h-250 {
-    height: 250px;
+  .h-200 {
+    height: 200px;
   }
 
   .print-button {

@@ -1,9 +1,23 @@
+var all = 0;
+var ageBall = 0;
+var operationBall = 0;
+var patientBall = 0;
+
 function calculation() {
-  var ageBall = 0;
-  var riskBall1 = 0;
-  var riskBall2 = 0;
+
+
   var classList = document.getElementById("result-box").className.split(" ");
   var arrayAge = document.getElementsByName("age");
+  var checkbox = document.getElementsByName("checkbox-risk");
+
+  checkbox.addEventListener( 'checkbox-risk', function() {
+      if(this.checked) {
+          console.log('chanssssssssssss')
+      } else {
+          console.log('nooooooot')
+      }
+  });
+
   for (var i = 0; i < arrayAge.length; i++) {
     if (arrayAge[i].checked) {
       ageBall = parseInt(arrayAge[i].value);
@@ -12,16 +26,16 @@ function calculation() {
   var arrayRisk1 = document.getElementsByName("checkbox-risk");
   for (var i = 0; i < arrayRisk1.length; i++) {
     if (arrayRisk1[i].checked) {
-      riskBall1 = riskBall1 + parseInt(arrayRisk1[i].value)
+      operationBall = operationBall + parseInt(arrayRisk1[i].value)
     }
   }
   var arrayRisk2 = document.getElementsByName("checkbox-risk-2");
   for (var i = 0; i < arrayRisk2.length; i++) {
     if (arrayRisk2[i].checked) {
-      riskBall2 = riskBall2 + parseInt(arrayRisk2[i].value)
+      patientBall = patientBall + parseInt(arrayRisk2[i].value)
     }
   }
-  if (ageBall + riskBall1 + riskBall2 === 0 || ageBall + riskBall1 + riskBall2 === 1) {
+  if (ageBall + operationBall + patientBall === 0 || ageBall + operationBall + patientBall === 1) {
     classList.forEach(function (classname) {
       if (classname === "bg-orange") {
         document.getElementById("result-box").classList.remove("bg-orange");
@@ -37,7 +51,7 @@ function calculation() {
     document.getElementById("result-box").classList.add("text-white");
     document.getElementById("result-text").innerText = "Низкий";
     document.getElementById("conclude").innerHTML = "Специфических мероприятий не требуется; ранняя активизация больного.";
-  } else if (ageBall + riskBall1 + riskBall2 === 2) {
+  } else if (ageBall + operationBall + patientBall === 2) {
     classList.forEach(function (classname) {
       if (classname === "bg-green") {
         document.getElementById("result-box").classList.remove("bg-green");
@@ -53,7 +67,7 @@ function calculation() {
     document.getElementById("result-box").classList.add("text-white");
     document.getElementById("result-text").innerText = "Умеренный";
     document.getElementById("conclude").innerHTML = "Низкие дозы нефракционированного гепарина (каждые 12 ч), низкомолеулярный гепарин (≤3400 МЕ/сут); <br>Чулки с распределением давления или прерывистая пневматическая компрессия.";
-  } else if (ageBall + riskBall1 + riskBall2 === 3 || ageBall + riskBall1 + riskBall2 === 4) {
+  } else if (ageBall + operationBall + patientBall === 3 || ageBall + operationBall + patientBall === 4) {
     classList.forEach(function (classname) {
       if (classname === "bg-green") {
         document.getElementById("result-box").classList.remove("bg-green");
@@ -69,7 +83,7 @@ function calculation() {
     document.getElementById("result-box").classList.add("text-white");
     document.getElementById("result-text").innerText = "Высокий";
     document.getElementById("conclude").innerHTML = "Нефракционированный гепарин (каждые 8 ч) или низкомолекулярный гепарин (>3400 МЕ/сут) или перемежающаяся пневматическая компрессия.";
-  } else if (ageBall + riskBall1 + riskBall2 >= 5) {
+  } else if (ageBall + operationBall + patientBall >= 5) {
     classList.forEach(function (classname) {
       if (classname === "bg-green") {
         document.getElementById("result-box").classList.remove("bg-green");
@@ -90,4 +104,49 @@ function calculation() {
 function resetFrom() {
   document.getElementById("form1").reset();
   document.getElementById("form").reset();
+}
+function add1(checkbox) {
+    if(checkbox.checked === true){
+        all = all + 1;
+        console.log('add one')
+    }else{
+        all = all - 1;
+        console.log('remove one')
+    }
+}
+function add2(checkbox) {
+    if(checkbox.checked === true){
+        all = all + 2;
+        console.log('add one')
+    }else{
+        all = all - 2;
+        console.log('remove one')
+    }
+}
+function add3(checkbox) {
+    if(checkbox.checked === true){
+        all = all + 3;
+        console.log('add one')
+    }else{
+        all = all - 3;
+        console.log('remove one')
+    }
+}
+function add4(checkbox) {
+    if(checkbox.checked === true){
+        all = all + 4;
+        console.log('add one')
+    }else{
+        all = all - 4;
+        console.log('remove one')
+    }
+}
+function add5(checkbox) {
+    if(checkbox.checked === true){
+        all = all + 5;
+        console.log('add one')
+    }else{
+        all = all - 5;
+        console.log('remove one')
+    }
 }

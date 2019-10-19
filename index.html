@@ -22,7 +22,7 @@
     Факторы риска, связанные с пациентом:
   </p>
   <div class="row">
-    <div class="col-md-4 col-sm-12 col-12">
+    <div class="col-md-2 col-sm-12 col-12">
       <form action="" id="form1" name="form">
         <p><strong>Возраст:</strong></p>
         <div class="box">
@@ -32,10 +32,29 @@
             <input type="radio" name="age" value="3">75 лет и более<br>
           </div>
         </div>
-        <p><strong>Факторы риска:</strong></p>
+        <p><strong>Факторы риска, связанные с травмой или с оперативным вмешательством</strong></p>
 
         <div class="box">
-          <div class="box-content scroll-div h-400">
+          <div class="box-content scroll-div">
+            <input type="checkbox" name="checkbox-risk-2" value="2"/> Центральный венозный доступ<br>
+            <input type="checkbox" name="checkbox-risk-2" value="1"/> Планируется малое хирургическое вмешательство<br>
+            <input type="checkbox" name="checkbox-risk-2" value="2"/> Артроскопическая операция<br>
+            <input type="checkbox" name="checkbox-risk-2" value="2"/> Лапароскопическая операция (>45 мин)<br>
+            <input type="checkbox" name="checkbox-risk-2" value="2"/> Большая хирургия (>45 мин)<br>
+            <input type="checkbox" name="checkbox-risk-2" value="5"/> Множественные травмы (<1 мес)<br>
+            <input type="checkbox" name="checkbox-risk-2" value="5"/> Артропластика нижних конечностей<br>
+            <input type="checkbox" name="checkbox-risk-2" value="5"/> Перелом таза / бедра / голени (<1 мес)<br>
+          </div>
+        </div>
+        <br>
+        <br>
+      </form>
+    </div>
+    <div class="col-md-5 col-sm-12 col-12">
+      <p><strong>Факторы риска:</strong></p>
+      <form action="" id="form" name="form">
+        <div class="box">
+          <div class="box-content scroll-div h-400 ">
             <input type="checkbox" name="checkbox-risk" value="1"/> Отечность ног (в данный момент)<br>
             <input type="checkbox" name="checkbox-risk" value="1"/> Варикоз вен<br>
             <input type="checkbox" name="checkbox-risk" value="1"/> Ожирение (индекс массы тела >25 кг/м2)<br>
@@ -80,32 +99,13 @@
             мес)<br>
           </div>
         </div>
-        <br>
-        <br>
-      </form>
-    </div>
-    <div class="col-md-3 col-sm-12 col-12">
-      <p><strong>Факторы риска, связанные с травмой или с оперативным вмешательством</strong></p>
-      <form action="" id="form" name="form">
-        <div class="box">
-          <div class="box-content">
-            <input type="checkbox" name="checkbox-risk-2" value="2"/> Центральный венозный доступ<br>
-            <input type="checkbox" name="checkbox-risk-2" value="1"/> Планируется малое хирургическое вмешательство<br>
-            <input type="checkbox" name="checkbox-risk-2" value="2"/> Артроскопическая операция<br>
-            <input type="checkbox" name="checkbox-risk-2" value="2"/> Лапароскопическая операция (>45 мин)<br>
-            <input type="checkbox" name="checkbox-risk-2" value="2"/> Большая хирургия (>45 мин)<br>
-            <input type="checkbox" name="checkbox-risk-2" value="5"/> Множественные травмы (<1 мес)<br>
-            <input type="checkbox" name="checkbox-risk-2" value="5"/> Артропластика нижних конечностей<br>
-            <input type="checkbox" name="checkbox-risk-2" value="5"/> Перелом таза / бедра / голени (<1 мес)<br>
-          </div>
-        </div>
       </form>
 
       <div class="text-center mt-3 mb-3">
-          <button class="btn btn-lg btn-success btn-green" type="reset" onclick="resetFrom()">
-            <b>СБРОС</b>
-          </button>
-        </div>
+        <button class="btn btn-lg btn-success btn-green" type="reset" onclick="resetFrom()">
+          <b>СБРОС</b>
+        </button>
+      </div>
     </div>
     <div class="col-md-5 col-sm-12 col-12">
       <div class="row box-row p-6">
@@ -128,7 +128,7 @@
       </div>
       <br>
       <div class="col-md-6 text-center offset-md-3">
-        <button class="btn btn-lg btn-success print-button btn-green" onclick="calculation()">
+        <button class="btn btn-lg btn-success btn-green" onclick="calculation()">
           <b>Распечатать</b>
         </button>
       </div>

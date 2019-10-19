@@ -3,9 +3,9 @@
 }
 
 .box {
-  border-radius: 30px;
+  border-radius: 10px;
   border: 3px solid rgba(143, 174, 127, 0.96);
-  padding: 20px 2px;
+  padding: 2px 2px;
 }
 
 .box-row {
@@ -25,8 +25,10 @@
 }
 
 .scroll-div {
-  overflow-y: scroll;
+  overflow: scroll;
+  white-space: nowrap;
 }
+
 
 .h-350 {
   height: 350px;
@@ -47,6 +49,7 @@
 
 .box-content::-webkit-scrollbar {
   width: 10px;
+  height: 10px;
   background-color: #F5F5F5;
 }
 
@@ -89,12 +92,10 @@ p {
 }
 
 .btn-green {
-  font-size: 28px;
-  width: 200px;
+  font-size: 18px;
+  width: 150px;
   border-radius: 10px;
-}
-
-.print-button {
+  padding: 5px;
 }
 
 @media (min-width: 768px) {

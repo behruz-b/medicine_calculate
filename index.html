@@ -38,8 +38,10 @@
             <input type="radio" name="age" onchange='calculate(this);' value="3">75 лет и более<br>
           </div>
         </div>
-        <p><strong style="font-size: 14px">Факторы риска, связанные с травмой или с оперативным вмешательством</strong>
+        <p class="visible-desktop"><strong style="font-size: 14px">Факторы риска, связанные с травмой или с оперативным вмешательством</strong>
         </p>
+        <p class="visible-mobile"><strong>Факторы риска:</strong></p>
+
         <div class="box visible-mobile">
           <div class="box-content scroll-div h-400 ">
             <input type="checkbox" name="patient-risk" onchange="calculate(this);" value="1"/> Отечность ног (в
@@ -129,7 +131,8 @@
       </form>
     </div>
     <div class="col-md-5 col-sm-12 col-12">
-      <p><strong>Факторы риска:</strong></p>
+      <p class="visible-desktop"><strong>Факторы риска:</strong></p>
+      <p class="visible-mobile"><strong style="font-size: 14px">Факторы риска, связанные с травмой или с оперативным вмешательством</strong></p>
       <form action="" id="form" name="form">
         <div class="box visible-mobile">
           <div class="box-content scroll-x">

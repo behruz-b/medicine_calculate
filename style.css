@@ -79,11 +79,11 @@
 }
 
 .bg-green {
-  background-color: rgba(130, 249, 54, 0.96);
+  background-color: green;
 }
 
 .bg-light-green {
-  background-color: lightgreen;
+  background-color: rgba(197,255,6,0.95);
 }
 
 .bg-orange {

@@ -121,12 +121,23 @@
       </div>
     </div>
     <div class="col-md-5 col-sm-12 col-12">
-      <form action="" id="form3" name="form" class="row box-row p-6">
-        <div class="col-md-3 text-center pt-3">Риск Втэо = <br><b id="all"></b></div>
-        <div class="col-md-4 text-center">Риск Втэо связанный с пациентом <br> <b id="patient"></b></div>
-        <div class="col-md-1 pt-3 text-center"> +</div>
-        <div class="col-md-4 text-center">Риск Втэо связанный с операцией <br><b id="operation"></b></div>
-      </form>
+      <div class=" box-row p-6">
+      <div class="row">
+        <div class="col-md-4 text-center pt-3">Риск Втэо &nbsp;&nbsp;&nbsp;=</div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-5 text-center"><small>Риск Втэо связанный с пациентом</small></div>
+            <div class="col-md-2 pt-3 text-center">+</div>
+            <div class="col-md-5 text-center"><small>Риск Втэо связанный с операцией</small></div>
+          </div>
+        </div>
+      </div>
+        <div class="row text-center">
+          <div class="col-md-4"><b id="all"></b></div>
+          <div class="col-md-4"><b id="patient"></b></div>
+          <div class="col-md-4"><b id="operation"></b></div>
+        </div>
+      </div>
       <div class="row p-1 h-40">
         <div class="col-md-8 offset-md-2 text-center">
           <p>УРОВЕНЬ РИСКА ВТЭО</p>
@@ -137,12 +148,10 @@
       </div>
       <p>РЕКОМЕНДАЦИИ ПО ПРОФИЛАКТИКЕ ВТЭО</p>
       <div class="row box-row ">
-        <div id="conclude" class="col-md-12 box-content scroll h-200 text-center">
-
-        </div>
+        <div id="conclude" class="col-md-12 box-content scroll h-200 text-center"></div>
       </div>
       <div class="col-md-6 text-center offset-md-3 mt-3">
-        <button class="btn btn-lg btn-success btn-green" onclick="calculation()">
+        <button class="btn btn-lg btn-success btn-green">
           <b>Распечатать</b>
         </button>
       </div>

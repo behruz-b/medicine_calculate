@@ -6,7 +6,13 @@ var patientBall = 0;
 function resetFrom() {
   document.getElementById("form1").reset();
   document.getElementById("form").reset();
-  document.getElementById("form").reset();
+  all = 0;
+  ageBall = 0;
+  operationBall = 0;
+  patientBall = 0;
+  document.getElementById("all").innerText = all;
+  document.getElementById("patient").innerText = patientBall;
+  document.getElementById("operation").innerText = operationBall;
 }
 function calculate(input) {
 
@@ -30,6 +36,9 @@ function calculate(input) {
         }
         f();
         all = all - parseInt(input.value);
+        document.getElementById("all").innerText = all;
+        document.getElementById("patient").innerText = patientBall;
+        document.getElementById("operation").innerText = operationBall;
     }
 
 }

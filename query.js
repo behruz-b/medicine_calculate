@@ -17,6 +17,10 @@ function calculate(input) {
             patientBall = patientBall + parseInt(input.value);
         }
         all = all + parseInt(input.value);
+        document.getElementById("all").innerText = all;
+        document.getElementById("patient").innerText = patientBall;
+        document.getElementById("operation").innerText = operationBall;
+
         f();
     }else{
         if (input.name === "operation-risk") {

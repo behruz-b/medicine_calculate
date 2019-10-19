@@ -5,7 +5,6 @@ var patientBall = 0;
 
 function calculation() {
 
-
   var classList = document.getElementById("result-box").className.split(" ");
   var arrayAge = document.getElementsByName("age");
   var checkbox = document.getElementsByName("checkbox-risk");
@@ -105,48 +104,22 @@ function resetFrom() {
   document.getElementById("form1").reset();
   document.getElementById("form").reset();
 }
-function add1(checkbox) {
-    if(checkbox.checked === true){
-        all = all + 1;
-        console.log('add one')
+function calculate(input) {
+    if(input.checked === true){
+        if (input.name === "operation-risk") {
+            operationBall = operationBall + input.value;
+        } else if (input.name === "patient-risk") {
+            patientBall = patientBall + input.value;
+        }
+        all = all + input.value;
+        console.log('add ', input.value)
     }else{
-        all = all - 1;
-        console.log('remove one')
-    }
-}
-function add2(checkbox) {
-    if(checkbox.checked === true){
-        all = all + 2;
-        console.log('add one')
-    }else{
-        all = all - 2;
-        console.log('remove one')
-    }
-}
-function add3(checkbox) {
-    if(checkbox.checked === true){
-        all = all + 3;
-        console.log('add one')
-    }else{
-        all = all - 3;
-        console.log('remove one')
-    }
-}
-function add4(checkbox) {
-    if(checkbox.checked === true){
-        all = all + 4;
-        console.log('add one')
-    }else{
-        all = all - 4;
-        console.log('remove one')
-    }
-}
-function add5(checkbox) {
-    if(checkbox.checked === true){
-        all = all + 5;
-        console.log('add one')
-    }else{
-        all = all - 5;
-        console.log('remove one')
+        if (input.name === "operation-risk") {
+            operationBall = operationBall - input.value;
+        } else if (input.name === "patient-risk") {
+            patientBall = patientBall - input.value;
+        }
+        all = all - input.value;
+        console.log('remove ', input.value)
     }
 }

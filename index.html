@@ -35,7 +35,7 @@
         <p><strong style="font-size: 14px">Факторы риска, связанные с травмой или с оперативным вмешательством</strong></p>
 
         <div class="box">
-          <div class="box-content scroll-div">
+          <div class="box-content scroll-x">
             <input type="checkbox" name="operation-risk" onchange='calculate(this);' value="2"/> Центральный венозный доступ<br>
             <input type="checkbox" name="operation-risk" onchange='calculate(this);' value="1"/> Планируется малое хирургическое вмешательство<br>
             <input type="checkbox" name="operation-risk" onchange='calculate(this);' value="2"/> Артроскопическая операция<br>
@@ -133,14 +133,14 @@
         </div>
       </div>
         <div class="row text-center">
-          <div class="col-md-4"><b id="all"></b></div>
-          <div class="col-md-4"><b id="patient"></b></div>
-          <div class="col-md-4"><b id="operation"></b></div>
+          <div class="col-md-4"><b id="all">0</b></div>
+          <div class="col-md-4"><b id="patient">0</b></div>
+          <div class="col-md-4"><b id="operation">0</b></div>
         </div>
       </div>
       <div class="row p-1 h-40">
         <div class="col-md-8 offset-md-2 text-center">
-          <p>УРОВЕНЬ РИСКА ВТЭО</p>
+          <p id="result-title"></p>
           <div id="result-box" class="text-center p-2 w-100 result-box">
             <h3 id="result-text" class="ml-2"></h3>
           </div>

@@ -33,6 +33,11 @@
   overflow-y: scroll;
 }
 
+.scroll-x {
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+
 
 .h-350 {
   height: 350px;
@@ -48,7 +53,7 @@
 }
 
 .h-400 {
-  height: 400px;
+  height: 370px;
 }
 
 .box-content::-webkit-scrollbar {
@@ -127,10 +132,11 @@ p {
   }
 
   .h-200 {
-    height: 200px;
+    height: 140px;
   }
 
   .print-button {
     margin-left: 3rem;
   }
+
 }

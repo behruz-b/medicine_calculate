@@ -38,30 +38,11 @@
             <input type="radio" name="age" onchange='calculate(this);' value="3">75 лет и более<br>
           </div>
         </div>
-        <p><strong style="font-size: 14px">Факторы риска, связанные с травмой или с оперативным вмешательством</strong></p>
-
-        <div class="box">
-          <div class="box-content scroll-x">
-            <input type="checkbox" name="operation-risk" onchange='calculate(this);' value="2"/> Центральный венозный доступ<br>
-            <input type="checkbox" name="operation-risk" onchange='calculate(this);' value="1"/> Планируется малое хирургическое вмешательство<br>
-            <input type="checkbox" name="operation-risk" onchange='calculate(this);' value="2"/> Артроскопическая операция<br>
-            <input type="checkbox" name="operation-risk" onchange='calculate(this);' value="2"/> Лапароскопическая операция (>45 мин)<br>
-            <input type="checkbox" name="operation-risk" onchange='calculate(this);' value="2"/> Большая хирургия (>45 мин)<br>
-            <input type="checkbox" name="operation-risk" onchange='calculate(this);' value="5"/> Множественные травмы (<1 мес)<br>
-            <input type="checkbox" name="operation-risk" onchange='calculate(this);' value="5"/> Артропластика нижних конечностей<br>
-            <input type="checkbox" name="operation-risk" onchange='calculate(this);' value="5"/> Перелом таза / бедра / голени (<1 мес)<br>
-          </div>
-        </div>
-        <br>
-        <br>
-      </form>
-    </div>
-    <div class="col-md-5 col-sm-12 col-12">
-      <p><strong>Факторы риска:</strong></p>
-      <form action="" id="form" name="form">
-        <div class="box">
+        <p><strong style="font-size: 14px">Факторы риска, связанные с травмой или с оперативным вмешательством</strong>
+        </p>
+        <div class="box visible-mobile">
           <div class="box-content scroll-div h-400 ">
-            <input type="checkbox" name="patient-risk" id="rrr" onchange="calculate(this);" value="7"/> Отечность ног (в
+            <input type="checkbox" name="patient-risk" onchange="calculate(this);" value="7"/> Отечность ног (в
             данный момент)<br>
             <input type="checkbox" name="patient-risk" onchange='calculate(this);' value="1"/> Варикоз вен<br>
             <input type="checkbox" name="patient-risk" onchange='calculate(this);' value="1"/> Ожирение (индекс
@@ -82,9 +63,11 @@
             недостаточность (<1 мес)<br>
             <input type="checkbox" name="patient-risk" onchange='calculate(this);' value="1"/> Пациент находится на
             постельном режиме<br>
-            <input type="checkbox" name="patient-risk" onchange='calculate(this);' value="1"/> Воспалительное заболевание
+            <input type="checkbox" name="patient-risk" onchange='calculate(this);' value="1"/> Воспалительное
+            заболевание
             кишечника в анамнезе<br>
-            <input type="checkbox" name="patient-risk" onchange='calculate(this);' value="1"/> Большая хирургия в анамнезе
+            <input type="checkbox" name="patient-risk" onchange='calculate(this);' value="1"/> Большая хирургия в
+            анамнезе
             (<1 мес)<br>
             <input type="checkbox" name="patient-risk" onchange='calculate(this);' value="1"/> Нарушение функции легких
             (ХОБЛ)<br>
@@ -92,7 +75,8 @@
             фактор риска<br>
             <input type="checkbox" name="patient-risk" onchange='calculate(this);' value="2"/> Злокачественное
             новообразование (в настоящее время или ранее)<br>
-            <input type="checkbox" name="patient-risk" onchange='calculate(this);' value="2"/> Пациент прикован к постели
+            <input type="checkbox" name="patient-risk" onchange='calculate(this);' value="2"/> Пациент прикован к
+            постели
             (>72 ч)<br>
             <input type="checkbox" name="patient-risk" onchange='calculate(this);' value="2"/> Иммобилизирующая гипсовая
             повязка (<1 мес)<br>
@@ -103,13 +87,126 @@
             20210A<br>
             <input type="checkbox" name="patient-risk" onchange='calculate(this);' value="3"/> Положительный тест на
             волчаночный антикоагулянт<br>
-            <input type="checkbox" name="patient-risk" onchange='calculate(this);' value="3"/> Наследственная склонность к
+            <input type="checkbox" name="patient-risk" onchange='calculate(this);' value="3"/> Наследственная склонность
+            к
             тромбозам (наиболее часто упускаемый из виду фактор!)<br>
             <input type="checkbox" name="patient-risk" onchange='calculate(this);' value="3"/> Повышенный уровень
             гомоцистеина в сыворотке<br>
             <input type="checkbox" name="patient-risk" value="3"/> Гепарин-индуцированная тромбоцитопения (не
             используйте гепарин и любые низкомолекулярные гепарины!)<br>
-            <input type="checkbox" name="patient-risk" onchange='calculate(this);' value="3"/> Повышенный уровень антител к
+            <input type="checkbox" name="patient-risk" onchange='calculate(this);' value="3"/> Повышенный уровень
+            антител к
+            кардиолипину<br>
+            <input type="checkbox" name="patient-risk" value="3"/> Другая наследственная или приобретенная
+            тромбофилия<br>
+            <input type="checkbox" name="patient-risk" onchange='calculate(this);' value="5"/> Инсульт (<1 мес)<br>
+            <input type="checkbox" name="patient-risk" onchange='calculate(this);' value="5"/> Острое поражение спинного
+            мозга (паралич) (<1 мес)<br>
+          </div>
+        </div>
+        <div class="box visible-desktop">
+          <div class="box-content scroll-x">
+            <input type="checkbox" name="operation-risk" onchange='calculate(this);' value="2"/> Центральный венозный
+            доступ<br>
+            <input type="checkbox" name="operation-risk" onchange='calculate(this);' value="1"/> Планируется малое
+            хирургическое вмешательство<br>
+            <input type="checkbox" name="operation-risk" onchange='calculate(this);' value="2"/> Артроскопическая
+            операция<br>
+            <input type="checkbox" name="operation-risk" onchange='calculate(this);' value="2"/> Лапароскопическая
+            операция (>45 мин)<br>
+            <input type="checkbox" name="operation-risk" onchange='calculate(this);' value="2"/> Большая хирургия (>45
+            мин)<br>
+            <input type="checkbox" name="operation-risk" onchange='calculate(this);' value="5"/> Множественные травмы
+            (<1 мес)<br>
+            <input type="checkbox" name="operation-risk" onchange='calculate(this);' value="5"/> Артропластика нижних
+            конечностей<br>
+            <input type="checkbox" name="operation-risk" onchange='calculate(this);' value="5"/> Перелом таза / бедра /
+            голени (<1 мес)<br>
+          </div>
+        </div>
+        <br>
+        <br>
+      </form>
+    </div>
+    <div class="col-md-5 col-sm-12 col-12">
+      <p><strong>Факторы риска:</strong></p>
+      <form action="" id="form" name="form">
+        <div class="box visible-mobile">
+          <div class="box-content scroll-x">
+            <input type="checkbox" name="operation-risk" onchange='calculate(this);' value="2"/> Центральный венозный
+            доступ<br>
+            <input type="checkbox" name="operation-risk" onchange='calculate(this);' value="1"/> Планируется малое
+            хирургическое вмешательство<br>
+            <input type="checkbox" name="operation-risk" onchange='calculate(this);' value="2"/> Артроскопическая
+            операция<br>
+            <input type="checkbox" name="operation-risk" onchange='calculate(this);' value="2"/> Лапароскопическая
+            операция (>45 мин)<br>
+            <input type="checkbox" name="operation-risk" onchange='calculate(this);' value="2"/> Большая хирургия (>45
+            мин)<br>
+            <input type="checkbox" name="operation-risk" onchange='calculate(this);' value="5"/> Множественные травмы
+            (<1 мес)<br>
+            <input type="checkbox" name="operation-risk" onchange='calculate(this);' value="5"/> Артропластика нижних
+            конечностей<br>
+            <input type="checkbox" name="operation-risk" onchange='calculate(this);' value="5"/> Перелом таза / бедра /
+            голени (<1 мес)<br>
+          </div>
+        </div>
+        <div class="box visible-desktop">
+          <div class="box-content scroll-div h-400 ">
+            <input type="checkbox" name="patient-risk" onchange="calculate(this);" value="7"/> Отечность ног (в
+            данный момент)<br>
+            <input type="checkbox" name="patient-risk" onchange='calculate(this);' value="1"/> Варикоз вен<br>
+            <input type="checkbox" name="patient-risk" onchange='calculate(this);' value="1"/> Ожирение (индекс
+            массы тела >25 кг/м2)<br>
+            <input type="checkbox" name="patient-risk" onchange='calculate(this);' value="1"/> Сепсис (<1 мес)<br>
+            <input type="checkbox" name="patient-risk" onchange='calculate(this);' value="1"/> Серьезное заболевание
+            легких, включая пневмонию (<1 мес)<br>
+            <input type="checkbox" name="patient-risk" onchange='calculate(this);' value="1"/> Прием оральных
+            контрацептивов или гормональная заместительная терапия<br>
+            <input type="checkbox" name="patient-risk" onchange='calculate(this);' value="1"/> Беременность или
+            послеродовый период (<1 мес)<br>
+            <input type="checkbox" name="patient-risk" onchange='calculate(this);' value="1"/> В анамнезе: рождение
+            мертвого ребенка по необъяснимым причинам, повторный самопроизвольный аборт (3 и более раз), рождение
+            ребенка с токсинемией, ребенок с задержкой роста <br>
+            <input type="checkbox" name="patient-risk" onchange='calculate(this);' value="1"/> Острый инфаркт
+            миокарда<br>
+            <input type="checkbox" name="patient-risk" onchange='calculate(this);' value="1"/> Застойная сердечная
+            недостаточность (<1 мес)<br>
+            <input type="checkbox" name="patient-risk" onchange='calculate(this);' value="1"/> Пациент находится на
+            постельном режиме<br>
+            <input type="checkbox" name="patient-risk" onchange='calculate(this);' value="1"/> Воспалительное
+            заболевание
+            кишечника в анамнезе<br>
+            <input type="checkbox" name="patient-risk" onchange='calculate(this);' value="1"/> Большая хирургия в
+            анамнезе
+            (<1 мес)<br>
+            <input type="checkbox" name="patient-risk" onchange='calculate(this);' value="1"/> Нарушение функции легких
+            (ХОБЛ)<br>
+            <input type="checkbox" name="patient-risk" onchange='calculate(this);' value="1"/> Какой-либо дополнительный
+            фактор риска<br>
+            <input type="checkbox" name="patient-risk" onchange='calculate(this);' value="2"/> Злокачественное
+            новообразование (в настоящее время или ранее)<br>
+            <input type="checkbox" name="patient-risk" onchange='calculate(this);' value="2"/> Пациент прикован к
+            постели
+            (>72 ч)<br>
+            <input type="checkbox" name="patient-risk" onchange='calculate(this);' value="2"/> Иммобилизирующая гипсовая
+            повязка (<1 мес)<br>
+            <input type="checkbox" name="patient-risk" onchange='calculate(this);' value="3"/> ТГВ/ТЭЛА в анамнезе<br>
+            <input type="checkbox" name="patient-risk" onchange='calculate(this);' value="3"/> Мутация фактора V
+            (Лейден)<br>
+            <input type="checkbox" name="patient-risk" onchange='calculate(this);' value="3"/> Мутация протромбина
+            20210A<br>
+            <input type="checkbox" name="patient-risk" onchange='calculate(this);' value="3"/> Положительный тест на
+            волчаночный антикоагулянт<br>
+            <input type="checkbox" name="patient-risk" onchange='calculate(this);' value="3"/> Наследственная склонность
+            к
+            тромбозам (наиболее часто упускаемый из виду фактор!)<br>
+            <input type="checkbox" name="patient-risk" onchange='calculate(this);' value="3"/> Повышенный уровень
+            гомоцистеина в сыворотке<br>
+            <input type="checkbox" name="patient-risk" value="3"/> Гепарин-индуцированная тромбоцитопения (не
+            используйте гепарин и любые низкомолекулярные гепарины!)<br>
+            <input type="checkbox" name="patient-risk" onchange='calculate(this);' value="3"/> Повышенный уровень
+            антител к
             кардиолипину<br>
             <input type="checkbox" name="patient-risk" value="3"/> Другая наследственная или приобретенная
             тромбофилия<br>
@@ -128,16 +225,20 @@
     </div>
     <div class="col-md-5 col-sm-12 col-12">
       <div class=" box-row p-6">
-      <div class="row">
-        <div class="col-md-4 text-center pt-3 col-4">Риск ВТЭО &nbsp;&nbsp;&nbsp;=</div>
-        <div class="col-md-8 col-8">
-          <div class="row">
-            <div class="col-md-5 col-5 text-center"><small>Риск ВТЭО связанный с пациентом</small></div>
-            <div class="col-md-2 pt-3 col-2 text-center">+</div>
-            <div class="col-md-5 text-center col-5"><small>Риск ВТЭО связанный с операцией</small></div>
+        <div class="row">
+          <div class="col-md-4 text-center pt-3 col-4">Риск ВТЭО &nbsp;&nbsp;&nbsp;=</div>
+          <div class="col-md-8 col-8">
+            <div class="row">
+              <div class="col-md-5 col-5 text-center">
+                <small>Риск ВТЭО связанный с пациентом</small>
+              </div>
+              <div class="col-md-2 pt-3 col-2 text-center">+</div>
+              <div class="col-md-5 text-center col-5">
+                <small>Риск ВТЭО связанный с операцией</small>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
         <div class="row text-center">
           <div class="col-md-4 col-4"><b id="all">0</b></div>
           <div class="col-md-4 col-4"><b id="patient">0</b></div>
